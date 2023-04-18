@@ -1,0 +1,38 @@
+.nav {
+  background: linear-gradient(rgba(34,34,34,.95),rgba(34,34,34,.75));
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  left: 0;
+  padding: 12px;
+  z-index: 3;
+}
+
+.nav > ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav > ul > li > a {
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 14px;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.cta {
+  margin: 80px 0px 100px 0px;
+  text-align: center;
+}
+
+.cta > p {
+  font-style: italic;
+  margin-top: 12px;
+}
+
+.cta > img {
+  margin-top: 24px;
+  width: 75%;
+  max-width: 960px;
+}

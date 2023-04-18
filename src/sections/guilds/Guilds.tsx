@@ -3,7 +3,10 @@ import styles from './Guilds.module.css';
 export const Guilds = () => {
   return (
     <div id="Guilds" className="container guilds">
-      <h3>Guilds</h3>
+      <h3>
+        <img src="assets/icons/guilds.png" className="icon"  alt="" />
+        Guilds
+      </h3>
 
       <p className={styles.guilds__intro}>
         These are some of the causes present on our hero's life for the last years of his journey

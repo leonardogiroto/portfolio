@@ -5,6 +5,8 @@ import { FindMe } from '@/sections/find-me/FindMe';
 import { Lore } from '@/sections/lore/Lore';
 import { Guilds } from '@/sections/guilds/Guilds';
 import { Education } from '@/sections/education/Education';
+import { Header } from '@/sections/header/Header';
+import { Achievements } from '@/sections/achievements/Achievements';
 
 export default function Home() {
   return (
@@ -17,21 +19,7 @@ export default function Home() {
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
       </Head>
       <main className={styles.main}>
-
-        <nav>
-          <ul>
-            <li>INTRODUCTION</li>
-            <li>SKILLSETS</li>
-            <li>QUESTS</li>
-            <li>LORE</li>
-            <li>ACHIEVEMENTS</li>
-            <li>GUILDS</li>
-          </ul>
-        </nav>
-
-        <h1>Leonardo Giroto</h1>
-
-        <p>an ambitious hero whose biggest goal is to change the world, for everyone</p>
+        <Header />
         
         <Introduction />
 
@@ -60,9 +48,7 @@ export default function Home() {
 
         <div style={{ marginTop: '60px' }} />
 
-        <div>
-          <h3>Achievements</h3>
-        </div>
+        <Achievements />
 
         <Education />
 
