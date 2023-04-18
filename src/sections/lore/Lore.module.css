@@ -1,0 +1,45 @@
+.lore {
+  background: var(--secondary-bg-color);
+}
+
+.lore__wrapper {
+  margin-top: -28px;
+}
+
+.lore__title {
+  margin-bottom: 28px;
+}
+
+.lore__title, .lore__intro {
+  text-align: center;
+}
+
+.lore__intro {
+  color: var(--scroll-text-color);
+  margin-bottom: 32px;
+}
+
+.lore__content {
+  display: flex;
+}
+
+.lore__positions {
+  flex-grow: 1;
+}
+
+.lore__scrollBorder {
+  background-position: center;
+  background-image: url('/assets/images/ScrollBorder.png');
+  width: 100%;
+  height: 80px;
+  position: relative;
+}
+
+.lore__topScroll {
+  top: -60px;
+}
+
+.lore__bottomScroll {
+  bottom: -60px;
+  transform: rotate(180deg);
+}

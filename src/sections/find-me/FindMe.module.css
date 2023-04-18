@@ -1,0 +1,20 @@
+.findMe {
+  margin-bottom: 80px;
+}
+
+.findMe__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+  gap: 24px;
+}
+
+.findMe__profilePicture {
+  width: 180px;
+  border-radius: 50%;
+}
+
+.findMe__highlight {
+  color: var(--primary-color);
+}

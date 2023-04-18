@@ -1,0 +1,11 @@
+.position__title {
+  margin: 8px 0;
+}
+
+.position__text {
+  margin: 16px 0;
+}
+
+.position__text {
+  color: var(--scroll-text-color);
+}

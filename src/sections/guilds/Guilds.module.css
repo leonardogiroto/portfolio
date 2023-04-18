@@ -1,0 +1,16 @@
+.guilds__intro {
+  margin: 24px 0px 32px 0px;
+  text-align: center;
+}
+
+.guilds__list {
+  max-width: 768px;
+  margin: 0 auto 48px auto;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  row-gap: 32px;
+}
+
+.guilds__listItem {
+  text-align: center;
+}

@@ -1,0 +1,47 @@
+.timeline {
+  display: flex;
+}
+
+@media screen and (max-width: 960px) {
+  .timeline {
+    display: none;
+  }
+}
+
+.timeline__years {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 12px;
+}
+
+.timeline__years > li {
+  color: var(--scroll-title-color);
+  font-family: 'Cinzel Decorative', cursive;
+}
+
+.timeline__line {
+  background: linear-gradient(var(--scroll-title-color),var(--scroll-text-color));
+  width: 2px;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 8px 0;
+  margin-right: 24px;
+}
+
+.timeline__dot {
+  width: 10px;
+  height: 10px;
+  border: 1px solid var(--scroll-text-color);
+  border-radius: 50%;
+  padding: 1px;
+  cursor: pointer;
+  position: relative;
+  left: -4px;
+}
+
+.timeline__firstDot {
+  background: var(--bg-color);
+}

@@ -5,10 +5,7 @@ import clsx from 'clsx';
 export const Introduction = () => {
   return (
     <div id="Introduction" className={styles.introduction}>
-      <div
-        className={clsx(styles.introduction__scrollBorder, styles.introduction__topScroll)}
-        style={{ backgroundImage: "url('assets/images/ScrollBorder.png')"}}
-      />
+      <div className={clsx(styles.introduction__scrollBorder, styles.introduction__topScroll)} />
 
       <h2 className={styles.introduction__title}>Once upon a time...</h2>
 
@@ -31,10 +28,7 @@ export const Introduction = () => {
         />
       </div>
 
-      <div
-        className={clsx(styles.introduction__scrollBorder, styles.introduction__bottomScroll)}
-        style={{ backgroundImage: "url('assets/images/ScrollBorder.png')"}}
-      />
+      <div className={clsx(styles.introduction__scrollBorder, styles.introduction__bottomScroll)} />
     </div>
   );
 };
