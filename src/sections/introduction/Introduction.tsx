@@ -18,7 +18,7 @@ export const Introduction = () => {
           <br /><br />
           No job is too big or too hard for him, no matter what lies ahead. He is always thirsty for knowledge and is a very quick learner; learning by others and sharing knowledge are one of the most important values he carries. Passionate about his work, he is always trying to find ways to improve; he knows that even the wisest sage still have something to learn!
           <br /><br />
-          One thing that he can't stand is the status quo. Therefore he is always evolved in new adventures, might that be new projects, learning different skillsets or traveling to new places. A hero that once puts something in his head he goes until the end; some would say stubborn, other persistent... Maybe both? 
+          One thing that he can not stand is the status quo. Therefore he is always evolved in new adventures, might that be new projects, learning different skillsets or traveling to new places. A hero that once puts something in his head he goes until the end; some would say stubborn, other persistent... Maybe both? 
         </p>
 
         <img

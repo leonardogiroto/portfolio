@@ -53,7 +53,7 @@ export const Education = () => {
               HCI: The Foundations of UX Design | sep 2022
             </li>
             <li>
-              Building Micro-Frontends (O'Reilly)<br />
+              Building Micro-Frontends (O&apos;Reilly)<br />
             </li>
             <li>
               The Ideal Team Player (Patrick Lencioni)<br />

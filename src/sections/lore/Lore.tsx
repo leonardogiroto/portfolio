@@ -12,7 +12,7 @@ export const Lore = () => {
         <h2 className={styles.lore__title}>Lore</h2>
 
         <p className={styles.lore__intro}>
-          Our hero's story as a software sage begins on 2012 when he first started working in the area, while attending engineering university.
+          Our hero&apos;s story as a software sage begins on 2012 when he first started working in the area, while attending engineering university.
           <br />
           <br className="showSm" />
           It has been years of vast and challenging experiences and he has been continuously falling in love with software engineering and searching for opportunities to learn, accomplish and grow. 
@@ -42,7 +42,7 @@ export const Lore = () => {
             <LoreExperience title="TG4 Consulting">
               <strong>Senior Software Engineer</strong>  |  Jun 2014 – Apr 2020<br />
               Full Stack Engineer on a software house working on web and mobile solutions for big companies and entrepreneurs.<br />
-              The stack includes multiple technologies, according to the clients' needs.<br />
+              The stack includes multiple technologies, according to the clients&apos; needs.<br />
               Building high performant systems; sales platforms, e-learning, financial management, among others.<br />
               Lead Developer, aiding on team and projects structuring and project decisions.<br /><br />
                 ● Senior Full Stack Engineer | Jan 2019 - Apr 2020<br />
@@ -63,7 +63,7 @@ export const Lore = () => {
             <LoreExperience title="Junior Enterprise PUC-Rio">
               <strong>Consultant & Manager</strong>  |  Nov 2012 – May 2014<br />
               Responsible for structuring Business Plans for entrepreneurs and developing Websites for diverse clients.<br />
-              As manager, responsible for companie's strategic decisions and managing small teams for both clients' and internal projects.<br />
+              As manager, responsible for companie&apos;s strategic decisions and managing small teams for both clients and internal projects.<br />
             </LoreExperience>
           </div>
         </div>

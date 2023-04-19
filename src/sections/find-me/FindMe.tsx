@@ -33,7 +33,7 @@ export const FindMe = () => {
   
           <br /><br />
           Feel free to talk to me,<br />
-          I promise I won't jinx you! 
+          I promise I won&apos;t jinx you! 
         </p>
       </div>
     </div>

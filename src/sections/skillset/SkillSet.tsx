@@ -32,7 +32,7 @@ export const SkillSet = () => {
         <p className={styles.skills__intro}>
           One of his greatest strenghts is the ability to rapidly learn any new skills;
           <br className="hideSm" />
-          and in the same way he's devoted to learning, he's passionate about sharing his knowledge. 
+          and in the same way he is devoted to learning, he is passionate about sharing his knowledge. 
         </p>
       </div>
 
@@ -41,7 +41,7 @@ export const SkillSet = () => {
       <h4>Primary Role: Frontend Engineer</h4>
 
       <p className={styles.skills__roleIntro}>
-        These skill's are where our hero excels and have been specializing his efforts throughout his journey.<br />
+        These skills are where our hero excels and have been specializing his efforts throughout his journey.<br />
         He has a vast and deep experience and is ready to face any challenges that may appear with expertise.
       </p>
 
@@ -88,7 +88,7 @@ export const SkillSet = () => {
               <img src="assets/icons/diamond.png" className="icon" alt="" />
               Building Interfaces
             </h5>
-            <p>Creates interfaces with great user experiences to achieve business' goals.</p>
+            <p>Creates interfaces with great user experiences to achieve business&apos; goals.</p>
             <p>Uses HTML, CSS and frameworks. Knows both Javascript and Typescript, as well as builds scalable project with React and Angular.</p>
           </div>
 
@@ -97,7 +97,7 @@ export const SkillSet = () => {
               <img src="assets/icons/book.png" className="icon" alt="" />
               Design Systems
             </h5>
-            <p>Creates interfaces with great user experiences to achieve business' goals.</p>
+            <p>Creates interfaces with great user experiences to achieve business&apos; goals.</p>
             <p>Uses HTML, CSS and frameworks. Knows both Javascript and Typescript, as well as builds scalable project with React and Angular.</p>
           </div>
           
@@ -106,7 +106,7 @@ export const SkillSet = () => {
               <img src="assets/icons/core.png" className="icon" alt="" />
               Web Vitals
             </h5>
-            <p>Creates interfaces with great user experiences to achieve business' goals.</p>
+            <p>Creates interfaces with great user experiences to achieve business&apos; goals.</p>
             <p>Uses HTML, CSS and frameworks. Knows both Javascript and Typescript, as well as builds scalable project with React and Angular.</p>
           </div>
 
@@ -115,7 +115,7 @@ export const SkillSet = () => {
               <img src="assets/icons/flag.png" className="icon" alt="" />
               Microfrontends
             </h5>
-            <p>Creates interfaces with great user experiences to achieve business' goals.</p>
+            <p>Creates interfaces with great user experiences to achieve business&apos; goals.</p>
             <p>Uses HTML, CSS and frameworks. Knows both Javascript and Typescript, as well as builds scalable project with React and Angular.</p>
           </div>
         </div>
@@ -173,7 +173,7 @@ export const SkillSet = () => {
               <img src="assets/icons/dialog.png" className="icon" alt="" />
               REST APIs
             </h5>
-            <p>Creates interfaces with great user experiences to achieve business' goals.</p>
+            <p>Creates interfaces with great user experiences to achieve business&apos; goals.</p>
             <p>Uses HTML, CSS and frameworks. Knows both Javascript and Typescript, as well as builds scalable project with React and Angular.</p>
           </div>
 
@@ -182,7 +182,7 @@ export const SkillSet = () => {
               <img src="assets/icons/egg.png" className="icon" alt="" />
               Databases
             </h5>
-            <p>Creates interfaces with great user experiences to achieve business' goals.</p>
+            <p>Creates interfaces with great user experiences to achieve business&apos; goals.</p>
             <p>Uses HTML, CSS and frameworks. Knows both Javascript and Typescript, as well as builds scalable project with React and Angular.</p>
           </div>
 
@@ -191,7 +191,7 @@ export const SkillSet = () => {
               <img src="assets/icons/balance.png" className="icon" alt="" />
               Microservices
             </h5>
-            <p>Creates interfaces with great user experiences to achieve business' goals.</p>
+            <p>Creates interfaces with great user experiences to achieve business&apos; goals.</p>
             <p>Uses HTML, CSS and frameworks. Knows both Javascript and Typescript, as well as builds scalable project with React and Angular.</p>
           </div>
 
@@ -200,7 +200,7 @@ export const SkillSet = () => {
               <img src="assets/icons/portal.png" className="icon" alt="" />
               Serverless
             </h5>
-            <p>Creates interfaces with great user experiences to achieve business' goals.</p>
+            <p>Creates interfaces with great user experiences to achieve business&apos; goals.</p>
             <p>Uses HTML, CSS and frameworks. Knows both Javascript and Typescript, as well as builds scalable project with React and Angular.</p>
           </div>
         </div>
