@@ -4,9 +4,9 @@ import { Introduction } from '@/sections/introduction/Introduction';
 import { FindMe } from '@/sections/find-me/FindMe';
 import { Lore } from '@/sections/lore/Lore';
 import { Guilds } from '@/sections/guilds/Guilds';
-import { Education } from '@/sections/education/Education';
 import { Header } from '@/sections/header/Header';
 import { Achievements } from '@/sections/achievements/Achievements';
+import { SkillSet } from '@/sections/skillset/SkillSet';
 
 export default function Home() {
   return (
@@ -23,16 +23,11 @@ export default function Home() {
         
         <Introduction />
 
-        <div>
-          <h3>Character Skillset</h3>
+        <SkillSet />
 
-          <p>
-            Our hero is a versatile software sage, combining multiple knowledges he has learned throughout his journey.
-            <br /><br />
-            One of his greatest strenghts is the ability to rapidly learn new skills;
-            and in the same way he's devoted to learning, he's passionate about sharing all his knowledge. 
-          </p>
-        </div>
+        <div className="divider" />
+
+        <div style={{ marginTop: '60px' }} />
 
         <div>
           <h3>Quests</h3>
@@ -49,8 +44,6 @@ export default function Home() {
         <div style={{ marginTop: '60px' }} />
 
         <Achievements />
-
-        <Education />
 
         <div className="divider" />
 

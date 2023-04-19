@@ -9,7 +9,7 @@ export const Guilds = () => {
       </h3>
 
       <p className={styles.guilds__intro}>
-        These are some of the causes present on our hero's life for the last years of his journey
+        These are some of the causes present on our hero's life for the last years of his journey.
       </p>
 
       <ul className={styles.guilds__list}>

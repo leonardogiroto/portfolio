@@ -55,7 +55,7 @@ ul {
   padding: 0;
 }
 
-li {
+li, dt, dd {
   font-family: 'Roboto Condensed', sans-serif;
   color: var(--secondary-color);
   list-style: none;
@@ -102,4 +102,8 @@ button {
 
 .icon {
   width: 50px;
+}
+
+.iconShadow {
+  width: 80px;
 }
