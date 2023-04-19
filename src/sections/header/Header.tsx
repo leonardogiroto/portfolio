@@ -18,8 +18,8 @@ export const Header = () => {
           </li>
 
           <li>
-            <a href="#Quest" >
-              QUEST
+            <a href="#Quests" >
+              QUESTS
             </a>
           </li>
 
@@ -38,6 +38,12 @@ export const Header = () => {
           <li>
             <a href="#Guilds" >
               GUILDS
+            </a>
+          </li>
+
+          <li>
+            <a href="#FindMe" >
+              FIND ME
             </a>
           </li>
         </ul>

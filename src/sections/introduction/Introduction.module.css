@@ -26,6 +26,7 @@
 .introduction__title {
   color: var(--scroll-title-color);
   text-align: center;
+  margin-top: -40px;
   margin-bottom: 20px;
 }
 
@@ -39,4 +40,20 @@
 
 .introduction__image {
   max-height: 420px;
+}
+
+@media screen and (max-width: 960px) {
+  .introduction__content {
+    flex-direction: column-reverse;
+  }
+  .introduction__title {
+    margin-bottom: 0;
+  }
+  .introduction__text {
+    margin-top: 20px;
+    margin-bottom: -20px;
+  }
+  .introduction__image {
+    margin: 0 auto;
+  }
 }

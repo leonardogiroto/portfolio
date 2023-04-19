@@ -24,11 +24,17 @@ export const SkillSet = () => {
     <div id="SkillSet" className={clsx("container", styles.skills)}>
       <h3>Character Skillset</h3>
 
-      <p className={styles.skills__intro}>
-        Our hero is a versatile software sage, combining multiple knowledges he has learned throughout his journey.<br />
-        One of his greatest strenghts is the ability to rapidly learn new skills;<br />
-        and in the same way he's devoted to learning, he's passionate about sharing his knowledge. 
-      </p>
+      <div className={styles.skills__intro}>
+        <p>
+          Our hero is a versatile software sage, combining knowledges he has learned throughout his journey.
+        </p>
+
+        <p className={styles.skills__intro}>
+          One of his greatest strenghts is the ability to rapidly learn any new skills;
+          <br className="hideSm" />
+          and in the same way he's devoted to learning, he's passionate about sharing his knowledge. 
+        </p>
+      </div>
 
       <div className="divider" />
 
@@ -40,7 +46,7 @@ export const SkillSet = () => {
       </p>
 
       <div className={styles.skills__selection}>
-        <div>
+        <div className={styles.skills__selectionScroll}>
           <ul className={styles.skills__list}>
             <li className={clsx(selectedFrontendSkill === FRONTEND_SKILLS.INTERFACE_BUILD && styles['skills__listItem--selected'])}>
               <button onClick={() => setSelectedFrontendSkill(FRONTEND_SKILLS.INTERFACE_BUILD)}>
@@ -71,6 +77,10 @@ export const SkillSet = () => {
             <div className={clsx(selectedFrontendSkill === FRONTEND_SKILLS.MICROFRONTENDS ? styles.skills__listDotSelected : styles.skills__listDot)} />
           </div>
         </div>
+
+        <p className={styles.skills_descriptionHint} aria-hidden>
+          hey! listen! click the icons to read details on skills.
+        </p>
 
         <div className={styles.skills_description}>
           <div className={clsx(selectedFrontendSkill !== FRONTEND_SKILLS.INTERFACE_BUILD && styles.skills_descriptionHidden)}>
@@ -116,8 +126,8 @@ export const SkillSet = () => {
       <h4>Secondary Role: Backend Engineer</h4>
 
       <p className={styles.skills__roleIntro}>
-        Though it may not be where the hero excels, a great sage needs to know their way around and gather a vast knowledge in order to face any challenge.<br />
-        He has had quite some experience as well and knows where to go when he needs to deepen his knowledge on any subject.
+        Though it may not be where the hero excels, a great sage knows his way around with a vast knowledge to face any kind of challenge.<br />
+        He has had quite some experience as well and knows where to go when he needs to deepen his knowledge.
       </p>
 
       <div className={styles.skills__selection}>
@@ -152,6 +162,10 @@ export const SkillSet = () => {
             <div className={clsx(selectedBackendSkill === BACKEND_SKILLS.SERVERLESS ? styles.skills__listDotSelected : styles.skills__listDot)} />
           </div>
         </div>
+
+        <p className={styles.skills_descriptionHint} aria-hidden>
+          hey! listen! click the icons to read details on skills.
+        </p>
 
         <div className={styles.skills_description}>
           <div className={clsx(selectedBackendSkill !== BACKEND_SKILLS.APIS_BUILD && styles.skills_descriptionHidden)}>
@@ -198,11 +212,11 @@ export const SkillSet = () => {
 
       <ul className={styles.skills_complementaryList}>
         <li>Requirements Engineering</li>
-        <li>Observability</li>
         <li>Tech Lead Engineer</li>
         <li>Agile & Scrum</li>
         <li>Technical Writing</li>
         <li>Mentoring</li>
+        <li>Observability</li>
       </ul>
     </div>
   );

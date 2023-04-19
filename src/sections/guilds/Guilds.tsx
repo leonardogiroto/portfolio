@@ -1,8 +1,9 @@
+import clsx from 'clsx';
 import styles from './Guilds.module.css';
 
 export const Guilds = () => {
   return (
-    <div id="Guilds" className="container guilds">
+    <div id="Guilds" className={clsx("container", styles.guilds)}>
       <h3>
         <img src="assets/icons/guilds.png" className="icon"  alt="" />
         Guilds

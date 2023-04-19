@@ -18,3 +18,19 @@
 .findMe__highlight {
   color: var(--primary-color);
 }
+
+@media screen and (max-width: 960px) {
+  .findMe {
+    margin-bottom: 40px;
+  }
+  .findMe__content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .findMe__profilePicture {
+    width: 140px;
+  }
+  .findMe__content {
+    margin-top: 12px;
+  }
+}

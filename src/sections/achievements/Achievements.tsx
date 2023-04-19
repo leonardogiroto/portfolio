@@ -11,7 +11,7 @@ export const Achievements = () => {
       </h3>
 
       <p className={styles.achievements__intro}>
-        Leo has ventured far and wide and had many experiences along the way, which helped developing the person he is today.
+        Leo has ventured far and wide and had many experiences along the way, which helped developing who he is today.
       </p>
 
       <Education />

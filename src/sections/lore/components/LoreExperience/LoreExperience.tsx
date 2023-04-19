@@ -3,12 +3,12 @@ import styles from './LoreExperience.module.css';
 import { PropsWithChildren } from "react";
 
 type LoreExperienceProps = {
-  className: string;
+  className?: string;
   title: string;
 };
 
 export const LoreExperience = (props: PropsWithChildren<LoreExperienceProps>) => {
-  const { className, title, children } = props;
+  const { className = '', title, children } = props;
 
   return (
     <div className={clsx(styles.position, className)}>

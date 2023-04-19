@@ -1,3 +1,8 @@
+.guilds {
+  margin-top: -80px;
+  padding-top: 80px;
+}
+
 .guilds__intro {
   margin: 24px 0px 32px 0px;
   text-align: center;
