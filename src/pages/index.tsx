@@ -7,6 +7,7 @@ import { Guilds } from '@/sections/guilds/Guilds';
 import { Header } from '@/sections/header/Header';
 import { Achievements } from '@/sections/achievements/Achievements';
 import { SkillSet } from '@/sections/skillset/SkillSet';
+import { Quests } from '@/sections/quests/Quests';
 
 export default function Home() {
   return (
@@ -25,23 +26,15 @@ export default function Home() {
 
         <SkillSet />
 
-        <div className="divider" />
-
         <div style={{ marginTop: '60px' }} />
-
-        <div>
-          <h3>Quests</h3>
-
-          <p>
-            Our hero has been a part of great adventures since the beggining of his career path.
-            <br /><br />
-            From the simplest to the harshest, he has committed to many quests, which he proudly displays for exploration! 
-          </p>
-        </div>
 
         <Lore />
 
         <div style={{ marginTop: '60px' }} />
+
+        <Quests />
+
+        <div className="divider" />
 
         <Achievements />
 

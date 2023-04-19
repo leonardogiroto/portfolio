@@ -1,0 +1,41 @@
+.quests {
+  margin-top: 100px;
+}
+
+.quests > h3 {
+  margin-bottom: 24px;
+}
+.quests > p {
+  text-align: center;
+}
+
+.quests__list {
+  max-width: 600px;
+  margin: 24px auto 40px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.quests__list > li {
+  color: var(--primary-color);
+  font-family: 'Cinzel Decorative', cursive;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.quests__list > li > img {
+  width: 80px;
+  cursor: pointer;
+}
+.quests__list > li:hover {
+  box-shadow: 0 0 4px #99774c,0 0 8px #a17e51;
+}
+
+.quests__tip {
+  font-style: italic;
+  padding-bottom: 8px;
+}
