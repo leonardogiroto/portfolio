@@ -19,7 +19,7 @@
 
 @media screen and (max-width: 960px) {
   .quests__list {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 .quests__list > li {
@@ -36,18 +36,20 @@
   align-items: center;
   border-radius: 50%;
   border: none;
+  width: 120px;
 }
 .quests__list > li > button:hover,
 .quests__list > li > button:focus-visible {
   box-shadow: 0 0 4px #99774c,0 0 8px #a17e51;
 }
 
-.quests__list > li > img {
+.quests__list > li > button > img {
   width: 80px;
   cursor: pointer;
 }
 
 .quests__tip {
+  font-size: 14px;
   font-style: italic;
   padding-bottom: 8px;
 }

@@ -3,13 +3,31 @@ import styles from './Quests.module.css';
 import * as Dialog from "@radix-ui/react-dialog";
 import { PortfolioQuest } from "./projects/PortfolioQuest";
 import { useState } from "react";
+import { ProseekQuest } from "./projects/ProseekQuest";
+import { ClubPetQuest } from "./projects/ClubPetQuest";
+import { EndoviewQuest } from "./projects/EndoviewQuest";
+import { LSWorksQuest } from "./projects/LSWorksQuest";
+import { YouBurgerQuest } from "./projects/YouBurgerQuest";
+import { QualicorpQuest } from "./projects/QualicorpQuest";
 
 enum QUESTS {
-  PORTFOLIO,
+  PORTFOLIO = 'Portfolio (2023)',
+  PROSEEK = 'ProSeek (2019)',
+  LSWORKS = 'LS Works (2018)',
+  QUALICORP = 'Qualicorp Realtors App (2018)',
+  ENDOVIEW = 'Endoview (2017)',
+  CLUBPET = 'ClubPet RJ (2017)',
+  YOUBURGER = 'YouBurger (2015)',
 };
 
 const QUESTS_MAP = {
   [QUESTS.PORTFOLIO]: <PortfolioQuest />,
+  [QUESTS.PROSEEK]: <ProseekQuest />,
+  [QUESTS.LSWORKS]: <LSWorksQuest />,
+  [QUESTS.ENDOVIEW]: <EndoviewQuest />,
+  [QUESTS.QUALICORP]: <QualicorpQuest />,
+  [QUESTS.CLUBPET]: <ClubPetQuest />,
+  [QUESTS.YOUBURGER]: <YouBurgerQuest />,
 };
 
 type QuestScrollProps = {
@@ -52,13 +70,37 @@ export const Quests = () => {
             <QuestScroll title="Portfolio" onClick={() => setSelectedQuest(QUESTS.PORTFOLIO)} />
           </li>
           <li>
-            <QuestScroll title="Portfolio" onClick={() => setSelectedQuest(QUESTS.PORTFOLIO)} />
+            <QuestScroll title="Microfrontends: Legacy Projects" onClick={() => setSelectedQuest(QUESTS.PORTFOLIO)} />
           </li>
           <li>
-            <QuestScroll title="Portfolio" onClick={() => setSelectedQuest(QUESTS.PORTFOLIO)} />
+            <QuestScroll title="Copan Platform" onClick={() => setSelectedQuest(QUESTS.PORTFOLIO)} />
           </li>
           <li>
-            <QuestScroll title="Portfolio" onClick={() => setSelectedQuest(QUESTS.PORTFOLIO)} />
+            <QuestScroll title="Core Pages Performance" onClick={() => setSelectedQuest(QUESTS.PORTFOLIO)} />
+          </li>
+          <li>
+            <QuestScroll title="Legacy API Shutdown" onClick={() => setSelectedQuest(QUESTS.PORTFOLIO)} />
+          </li>
+          <li>
+            <QuestScroll title="Interviews Revamp" onClick={() => setSelectedQuest(QUESTS.PORTFOLIO)} />
+          </li>
+          <li>
+            <QuestScroll title="ProSeek E-Learning" onClick={() => setSelectedQuest(QUESTS.PROSEEK)} />
+          </li>
+          <li>
+            <QuestScroll title="Qualicorp Realtors App" onClick={() => setSelectedQuest(QUESTS.QUALICORP)} />
+          </li>
+          <li>
+            <QuestScroll title="LS Works" onClick={() => setSelectedQuest(QUESTS.LSWORKS)} />
+          </li>
+          <li>
+            <QuestScroll title="ClubPet RJ" onClick={() => setSelectedQuest(QUESTS.CLUBPET)} />
+          </li>
+          <li>
+            <QuestScroll title="Endoview" onClick={() => setSelectedQuest(QUESTS.ENDOVIEW)} />
+          </li>
+          <li>
+            <QuestScroll title="YouBurger" onClick={() => setSelectedQuest(QUESTS.YOUBURGER)} />
           </li>
         </ul>
 
@@ -73,7 +115,7 @@ export const Quests = () => {
             <div className={clsx(styles.quests__scrollBorder, styles.quests__topScroll)} />
 
             <Dialog.Title className={styles.quests__dialogTitle}>
-              Portfolio
+              {selectedQuest}
             </Dialog.Title>
             <Dialog.Description className={styles.quests__dialogDescription}>
               {QUESTS_MAP[selectedQuest as QUESTS]}
