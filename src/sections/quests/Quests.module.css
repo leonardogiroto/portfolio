@@ -17,7 +17,17 @@
   gap: 24px;
 }
 
+@media screen and (max-width: 960px) {
+  .quests__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 .quests__list > li {
+  display: flex;
+  justify-content: center;
+}
+
+.quests__list > li > button {
   color: var(--primary-color);
   font-family: 'Cinzel Decorative', cursive;
   font-weight: 600;
@@ -25,17 +35,87 @@
   flex-direction: column;
   align-items: center;
   border-radius: 50%;
+  border: none;
+}
+.quests__list > li > button:hover,
+.quests__list > li > button:focus-visible {
+  box-shadow: 0 0 4px #99774c,0 0 8px #a17e51;
 }
 
 .quests__list > li > img {
   width: 80px;
   cursor: pointer;
 }
-.quests__list > li:hover {
-  box-shadow: 0 0 4px #99774c,0 0 8px #a17e51;
-}
 
 .quests__tip {
   font-style: italic;
   padding-bottom: 8px;
+}
+
+.quests__dialogOverlay {
+  background-color: var(--bg-color);
+  position: fixed;
+  inset: 0;
+  z-index: 4;
+  opacity: 0.75;
+}
+
+.quests__dialogContent {
+  background-color: var(--secondary-bg-color);
+  border-radius: 6px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  max-width: 500px;
+  max-height: 85vh;
+  animation: contentShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 4;
+  text-align: center;
+}
+.quests__dialogContent:focus {
+  outline: none;
+}
+
+.quests__dialogTitle {
+  font-weight: 600;
+}
+
+.quests__dialogDescription {
+  color: var(--scroll-text-color);
+  padding: 12px 16px;
+}
+
+.quests__dialogDescription > span {
+  font-size: 14px;
+}
+
+.scrollDialog__closeScroll {
+  font-weight: 600;
+  font-style: italic;
+  color: var(--feedback-color);
+  border: none;
+  text-decoration: underline;
+  margin-bottom: -60px;
+}
+.scrollDialog__closeScroll:focus-visible {
+  border: 1px solid;
+}
+
+.quests__scrollBorder {
+  background-position: center;
+  background-image: url('/assets/images/ScrollBorder.png');
+  width: 100%;
+  height: 60px;
+  position: relative;
+}
+
+.quests__topScroll {
+  top: -40px;
+}
+
+.quests__bottomScroll {
+  bottom: -40px;
+  transform: rotate(180deg);
 }

@@ -9,6 +9,7 @@
   --light-primary-color: #f8e8d3;
   --faded-primary-color: rgba(255, 200, 123, 0.4);
   --very-faded-primary-color: rgba(255, 200, 123, 0.15);
+  --feedback-color: #8b0000;
 }
 
 * {
