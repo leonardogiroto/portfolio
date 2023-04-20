@@ -9,9 +9,19 @@ import { EndoviewQuest } from "./projects/EndoviewQuest";
 import { LSWorksQuest } from "./projects/LSWorksQuest";
 import { YouBurgerQuest } from "./projects/YouBurgerQuest";
 import { QualicorpQuest } from "./projects/QualicorpQuest";
+import { MicrofrontendsQuest } from "./projects/MicrofrontendsQuest";
+import { CopanPlatformQuest } from "./projects/CopanPlatformQuest";
+import { InterviewRevampQuest } from "./projects/InterviewRevampQuest";
+import { LegacyAPIQuest } from "./projects/LegacyAPIQuest";
+import { LoftMarketplaceQuest } from "./projects/LoftMarketplace";
 
 enum QUESTS {
   PORTFOLIO = 'Portfolio (2023)',
+  MICROFRONTENDS = 'Microfrontends: Legacy Projects (2023)',
+  COPAN_PLATFORM = 'Copan Platform (2022)',
+  INTERVIEW_REVAMP = 'Interviews Revamp (2022)',
+  LEGACY_API = 'Legacy API (2021)',
+  LOFT_MARKETPLACE = 'Loft Marketplace (2021)',
   PROSEEK = 'ProSeek (2019)',
   LSWORKS = 'LS Works (2018)',
   QUALICORP = 'Qualicorp Realtors App (2018)',
@@ -22,6 +32,11 @@ enum QUESTS {
 
 const QUESTS_MAP = {
   [QUESTS.PORTFOLIO]: <PortfolioQuest />,
+  [QUESTS.MICROFRONTENDS]: <MicrofrontendsQuest />,
+  [QUESTS.COPAN_PLATFORM]: <CopanPlatformQuest />,
+  [QUESTS.INTERVIEW_REVAMP]: <InterviewRevampQuest />,
+  [QUESTS.LEGACY_API]: <LegacyAPIQuest />,
+  [QUESTS.LOFT_MARKETPLACE]: <LoftMarketplaceQuest />,
   [QUESTS.PROSEEK]: <ProseekQuest />,
   [QUESTS.LSWORKS]: <LSWorksQuest />,
   [QUESTS.ENDOVIEW]: <EndoviewQuest />,
@@ -70,19 +85,19 @@ export const Quests = () => {
             <QuestScroll title="Portfolio" onClick={() => setSelectedQuest(QUESTS.PORTFOLIO)} />
           </li>
           <li>
-            <QuestScroll title="Microfrontends: Legacy Projects" onClick={() => setSelectedQuest(QUESTS.PORTFOLIO)} />
+            <QuestScroll title="Microfrontends: Legacy Projects" onClick={() => setSelectedQuest(QUESTS.MICROFRONTENDS)} />
           </li>
           <li>
-            <QuestScroll title="Copan Platform" onClick={() => setSelectedQuest(QUESTS.PORTFOLIO)} />
+            <QuestScroll title="Copan Platform" onClick={() => setSelectedQuest(QUESTS.COPAN_PLATFORM)} />
           </li>
           <li>
-            <QuestScroll title="Core Pages Performance" onClick={() => setSelectedQuest(QUESTS.PORTFOLIO)} />
+            <QuestScroll title="Interviews Revamp" onClick={() => setSelectedQuest(QUESTS.INTERVIEW_REVAMP)} />
           </li>
           <li>
-            <QuestScroll title="Legacy API Shutdown" onClick={() => setSelectedQuest(QUESTS.PORTFOLIO)} />
+            <QuestScroll title="Legacy API Shutdown" onClick={() => setSelectedQuest(QUESTS.LEGACY_API)} />
           </li>
           <li>
-            <QuestScroll title="Interviews Revamp" onClick={() => setSelectedQuest(QUESTS.PORTFOLIO)} />
+            <QuestScroll title="Loft Marketplace" onClick={() => setSelectedQuest(QUESTS.LOFT_MARKETPLACE)} />
           </li>
           <li>
             <QuestScroll title="ProSeek E-Learning" onClick={() => setSelectedQuest(QUESTS.PROSEEK)} />
