@@ -56,7 +56,7 @@ export const Header = () => {
           Giroto
         </h1>
         <p>an ambitious hero whose goal is to change the world, for everyone</p>
-        <img alt="" src="/assets/images/TopDivider.png" width="100%" height="10" />
+        <img alt="" src="/assets/images/TopDivider.png" width="100%" height="auto" />
       </div>
     </>
   );
