@@ -50,7 +50,11 @@ export const Header = () => {
       </nav>
 
       <div className={styles.cta}>
-        <h1>Leonardo Giroto</h1>
+        <h1>
+          Leonardo&nbsp;
+          <br className="showSm" />
+          Giroto
+        </h1>
         <p>an ambitious hero whose goal is to change the world, for everyone</p>
         <img alt="" src="/assets/images/TopDivider.png" />
       </div>
