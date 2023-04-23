@@ -15,7 +15,7 @@ export const Lore = () => {
           Our hero&apos;s story as a software sage begins on 2012 when he first started working in the area, while attending engineering university.
           <br />
           <br className="showSm" />
-          It has been years of vast and challenging experiences and he has been continuously falling in love with software engineering and searching for opportunities to learn, accomplish and grow. 
+          It has been years of vast and challenging experiences and he has been continuously falling in love with software engineering.
         </p>
 
         <div className={styles.lore__content}>

@@ -1,0 +1,23 @@
+.skills__listDots {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.skills__listDot, .skills__listDotSelected {
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  margin-top: 12px;
+}
+
+.skills__listDotSelected {
+  background: var(--primary-color);
+  box-shadow: 0 0 4px #99774c,0 0 8px #a17e51;
+}
+
+@media screen and (max-width: 960px) {
+  .skills__listDots {
+    display: none;
+  }
+}

@@ -1,6 +1,11 @@
 import clsx from 'clsx';
 import styles from './SkillSet.module.css';
 import { useState } from 'react';
+import { SkilLSetIntro } from './components/SkillSetIntro/SkillSetIntro';
+import { SkillSetComplementary } from './components/SkillSetComplementary/SkillSetComplementary';
+import { SkillSetRole } from './components/SkillSetRole/SkillSetRole';
+import { SkillSetDotsList } from './components/SkillSetDotsList/SkillSetDotsList';
+import { SkillDescription } from './components/SkillDescription/SkillDescription';
 
 enum BACKEND_SKILLS {
   APIS_BUILD,
@@ -24,29 +29,17 @@ export const SkillSet = () => {
     <div id="SkillSet" className={clsx("container", styles.skills)}>
       <h3>Character Skillset</h3>
 
-      <div className={styles.skills__intro}>
-        <p>
-          Our hero is a versatile software sage, combining knowledges he has learned throughout his journey.
-        </p>
-
-        <p className={styles.skills__intro}>
-          One of his greatest strenghts is the ability to rapidly learn any new skills;
-          <br className="hideSm" />
-          and in the same way he is devoted to learning, he is passionate about sharing his knowledge. 
-        </p>
-      </div>
+      <SkilLSetIntro />
 
       <div className="divider" />
 
-      <h4>Primary Role: Frontend Engineer</h4>
-
-      <p className={styles.skills__roleIntro}>
+      <SkillSetRole title="Primary Role: Frontend Engineer">
         These skills are where our hero excels and have been specializing his efforts throughout his journey.<br />
         He has a vast and deep experience and is ready to face any challenges that may appear with expertise.
-      </p>
+      </SkillSetRole>
 
       <div className={styles.skills__selection}>
-        <div className={styles.skills__selectionScroll}>
+        <div>
           <ul className={styles.skills__list}>
             <li className={clsx(selectedFrontendSkill === FRONTEND_SKILLS.INTERFACE_BUILD && styles['skills__listItem--selected'])}>
               <button onClick={() => setSelectedFrontendSkill(FRONTEND_SKILLS.INTERFACE_BUILD)}>
@@ -69,13 +62,12 @@ export const SkillSet = () => {
               </button>
             </li>
           </ul>
-          
-          <div className={styles.skills__listDots} aria-hidden>
-            <div className={clsx(selectedFrontendSkill === FRONTEND_SKILLS.INTERFACE_BUILD ? styles.skills__listDotSelected : styles.skills__listDot)} />
-            <div className={clsx(selectedFrontendSkill === FRONTEND_SKILLS.DESIGN_SYSTEM ? styles.skills__listDotSelected : styles.skills__listDot)} />
-            <div className={clsx(selectedFrontendSkill === FRONTEND_SKILLS.WEB_VITALS ? styles.skills__listDotSelected : styles.skills__listDot)} />
-            <div className={clsx(selectedFrontendSkill === FRONTEND_SKILLS.MICROFRONTENDS ? styles.skills__listDotSelected : styles.skills__listDot)} />
-          </div>
+
+          <SkillSetDotsList
+            keyBase="Frontend"
+            items={[FRONTEND_SKILLS.INTERFACE_BUILD, FRONTEND_SKILLS.DESIGN_SYSTEM, FRONTEND_SKILLS.WEB_VITALS, FRONTEND_SKILLS.MICROFRONTENDS]}
+            selected={selectedFrontendSkill}
+          />
         </div>
 
         <p className={styles.skills_descriptionHint} aria-hidden>
@@ -83,52 +75,50 @@ export const SkillSet = () => {
         </p>
 
         <div className={styles.skills_description}>
-          <div className={clsx(selectedFrontendSkill !== FRONTEND_SKILLS.INTERFACE_BUILD && styles.skills_descriptionHidden)}>
-            <h5>
-              <img src="assets/icons/diamond.png" className="icon" alt="" />
-              Building Interfaces
-            </h5>
+          <SkillDescription
+            isSelected={selectedFrontendSkill !== FRONTEND_SKILLS.INTERFACE_BUILD}
+            iconSrc="assets/icons/diamond.png"
+            title="Building Interfaces"
+          >
             <p>Creates interfaces with great user experiences to achieve business&apos; goals.</p>
             <p>Uses HTML, CSS and frameworks. Knows both Javascript and Typescript, as well as builds scalable project with React and Angular.</p>
-          </div>
+          </SkillDescription>
 
-          <div className={clsx(selectedFrontendSkill !== FRONTEND_SKILLS.DESIGN_SYSTEM && styles.skills_descriptionHidden)}>
-            <h5>
-              <img src="assets/icons/book.png" className="icon" alt="" />
-              Design Systems
-            </h5>
-            <p>Creates interfaces with great user experiences to achieve business&apos; goals.</p>
-            <p>Uses HTML, CSS and frameworks. Knows both Javascript and Typescript, as well as builds scalable project with React and Angular.</p>
-          </div>
-          
-          <div className={clsx(selectedFrontendSkill !== FRONTEND_SKILLS.WEB_VITALS && styles.skills_descriptionHidden)}>
-            <h5>
-              <img src="assets/icons/core.png" className="icon" alt="" />
-              Web Vitals
-            </h5>
-            <p>Creates interfaces with great user experiences to achieve business&apos; goals.</p>
-            <p>Uses HTML, CSS and frameworks. Knows both Javascript and Typescript, as well as builds scalable project with React and Angular.</p>
-          </div>
+          <SkillDescription
+            isSelected={selectedFrontendSkill !== FRONTEND_SKILLS.DESIGN_SYSTEM}
+            iconSrc="assets/icons/book.png"
+            title="Design Systems"
+          >
+            <p>Uses Design Systems to build accessible and consistent interfaces more efficiently.</p>
+            <p>Creates Design Systems from scratch following best practices and enhancing teams productivity and delivery quality.</p>
+          </SkillDescription>
 
-          <div className={clsx(selectedFrontendSkill !== FRONTEND_SKILLS.MICROFRONTENDS && styles.skills_descriptionHidden)}>
-            <h5>
-              <img src="assets/icons/flag.png" className="icon" alt="" />
-              Microfrontends
-            </h5>
-            <p>Creates interfaces with great user experiences to achieve business&apos; goals.</p>
-            <p>Uses HTML, CSS and frameworks. Knows both Javascript and Typescript, as well as builds scalable project with React and Angular.</p>
-          </div>
+          <SkillDescription
+            isSelected={selectedFrontendSkill !== FRONTEND_SKILLS.WEB_VITALS}
+            iconSrc="assets/icons/core.png"
+            title="Web Vitals"
+          >
+            <p>Builds performant Frontends ensuring it has solid SEO and Web Vitals.</p>
+            <p>Investigate bottlenecks and enhance the performance of web applications, providing better user experience and leads conversion.</p>
+          </SkillDescription>
+
+          <SkillDescription
+            isSelected={selectedFrontendSkill !== FRONTEND_SKILLS.MICROFRONTENDS}
+            iconSrc="assets/icons/flag.png"
+            title="Microfrontends"
+          >
+            <p>Designs and implements Microfrontends solutions to boost teams productivity.</p>
+            <p>Proposes solutions to reduce projects complexity and maintenance costs, while giving teams autonomy and allowing faster releases.</p>
+          </SkillDescription>
         </div>
       </div>
 
       <div className="divider" />
 
-      <h4>Secondary Role: Backend Engineer</h4>
-
-      <p className={styles.skills__roleIntro}>
+      <SkillSetRole title="Secondary Role: Backend Engineer">
         Though it may not be where the hero excels, a great sage knows his way around with a vast knowledge to face any kind of challenge.<br />
         He has had quite some experience as well and knows where to go when he needs to deepen his knowledge.
-      </p>
+      </SkillSetRole>
 
       <div className={styles.skills__selection}>
         <div>
@@ -154,13 +144,12 @@ export const SkillSet = () => {
               </button>
             </li>
           </ul>
-          
-          <div className={styles.skills__listDots} aria-hidden>
-            <div className={clsx(selectedBackendSkill === BACKEND_SKILLS.APIS_BUILD ? styles.skills__listDotSelected : styles.skills__listDot)} />
-            <div className={clsx(selectedBackendSkill === BACKEND_SKILLS.DATABASES ? styles.skills__listDotSelected : styles.skills__listDot)} />
-            <div className={clsx(selectedBackendSkill === BACKEND_SKILLS.MICROSERVICES ? styles.skills__listDotSelected : styles.skills__listDot)} />
-            <div className={clsx(selectedBackendSkill === BACKEND_SKILLS.SERVERLESS ? styles.skills__listDotSelected : styles.skills__listDot)} />
-          </div>
+
+          <SkillSetDotsList
+            keyBase="Backend"
+            items={[BACKEND_SKILLS.APIS_BUILD, BACKEND_SKILLS.DATABASES, BACKEND_SKILLS.MICROSERVICES, BACKEND_SKILLS.SERVERLESS]}
+            selected={selectedBackendSkill}
+          />
         </div>
 
         <p className={styles.skills_descriptionHint} aria-hidden>
@@ -168,56 +157,47 @@ export const SkillSet = () => {
         </p>
 
         <div className={styles.skills_description}>
-          <div className={clsx(selectedBackendSkill !== BACKEND_SKILLS.APIS_BUILD && styles.skills_descriptionHidden)}>
-            <h5>
-              <img src="assets/icons/dialog.png" className="icon" alt="" />
-              REST APIs
-            </h5>
-            <p>Creates interfaces with great user experiences to achieve business&apos; goals.</p>
-            <p>Uses HTML, CSS and frameworks. Knows both Javascript and Typescript, as well as builds scalable project with React and Angular.</p>
-          </div>
+          <SkillDescription
+            isSelected={selectedBackendSkill !== BACKEND_SKILLS.APIS_BUILD}
+            iconSrc="assets/icons/dialog.png"
+            title="REST APIs"
+          >
+            <p>Builds simple and flexible REST APIs to serve web pages contents.</p>
+            <p>Creates scalabe APIs, proposing solutions based on the requirements (Authentication, BFFs, Gateways, etc.).</p>
+          </SkillDescription>
 
-          <div className={clsx(selectedBackendSkill !== BACKEND_SKILLS.DATABASES && styles.skills_descriptionHidden)}>
-            <h5>
-              <img src="assets/icons/egg.png" className="icon" alt="" />
-              Databases
-            </h5>
-            <p>Creates interfaces with great user experiences to achieve business&apos; goals.</p>
-            <p>Uses HTML, CSS and frameworks. Knows both Javascript and Typescript, as well as builds scalable project with React and Angular.</p>
-          </div>
+          <SkillDescription
+            isSelected={selectedBackendSkill !== BACKEND_SKILLS.DATABASES}
+            iconSrc="assets/icons/egg.png"
+            title="Databases"
+          >
+            <p>Uses databases for storing simple data or large volumes of data.</p>
+            <p>Proposes usage of the right tools for the right job (SQL vs NoSQL) and solutions for scalability (Queries optimization, Indexes, Replicas, etc.).</p>
+          </SkillDescription>
 
-          <div className={clsx(selectedBackendSkill !== BACKEND_SKILLS.MICROSERVICES && styles.skills_descriptionHidden)}>
-            <h5>
-              <img src="assets/icons/balance.png" className="icon" alt="" />
-              Microservices
-            </h5>
-            <p>Creates interfaces with great user experiences to achieve business&apos; goals.</p>
-            <p>Uses HTML, CSS and frameworks. Knows both Javascript and Typescript, as well as builds scalable project with React and Angular.</p>
-          </div>
+          <SkillDescription
+            isSelected={selectedBackendSkill !== BACKEND_SKILLS.MICROSERVICES}
+            iconSrc="assets/icons/balance.png"
+            title="Microservices"
+          >
+            <p>Designs and implements Microservices solutions to boost teams productivity.</p>
+            <p>Proposes solutions to reduce projects complexity and maintenance costs, while giving teams autonomy and allowing faster releases.</p>
+          </SkillDescription>
 
-          <div className={clsx(selectedBackendSkill !== BACKEND_SKILLS.SERVERLESS && styles.skills_descriptionHidden)}>
-            <h5>
-              <img src="assets/icons/portal.png" className="icon" alt="" />
-              Serverless
-            </h5>
-            <p>Creates interfaces with great user experiences to achieve business&apos; goals.</p>
-            <p>Uses HTML, CSS and frameworks. Knows both Javascript and Typescript, as well as builds scalable project with React and Angular.</p>
-          </div>
+          <SkillDescription
+            isSelected={selectedBackendSkill !== BACKEND_SKILLS.SERVERLESS}
+            iconSrc="assets/icons/portal.png"
+            title="Serverless"
+          >
+            <p>Implements Serverless solutions - when it makes sense - to achieve scalability.</p>
+            <p>Designs solutions to significantly reduce infrastructure complexity, maintenance and costs (AWS Lambda, NoSQL, Firebase, etc.).</p>
+          </SkillDescription>
         </div>
       </div>
 
       <div className="divider" />
 
-      <h4>Complementary Roles</h4>
-
-      <ul className={styles.skills_complementaryList}>
-        <li>Requirements Engineering</li>
-        <li>Tech Lead Engineer</li>
-        <li>Agile & Scrum</li>
-        <li>Technical Writing</li>
-        <li>Mentoring</li>
-        <li>Observability</li>
-      </ul>
+      <SkillSetComplementary />
     </div>
   );
 };

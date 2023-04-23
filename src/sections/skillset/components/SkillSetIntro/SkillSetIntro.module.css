@@ -1,0 +1,8 @@
+.skills__intro {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.skills__intro > p:first-child {
+  margin-bottom: 12px;
+}
