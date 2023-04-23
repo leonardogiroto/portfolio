@@ -19,3 +19,9 @@
 .guilds__listItem {
   text-align: center;
 }
+.guilds__listItem > p {
+  color: var(--primary-color);
+  font-family: 'Cinzel Decorative', cursive;
+  font-weight: 600;
+  font-size: 14px;
+}

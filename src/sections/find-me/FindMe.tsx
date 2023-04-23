@@ -5,7 +5,7 @@ export const FindMe = () => {
   return (
     <div id="FindMe" className={clsx('container', styles.findMe)}>
       <h3>
-        <img className="icon" src="/assets/icons/letter.png" alt="" />
+        <img className="icon" src="/assets/icons/letter.png" alt="" width="50" height="50" />
         How to Find Me
       </h3>
 
@@ -13,7 +13,10 @@ export const FindMe = () => {
         <img
           className={styles.findMe__profilePicture}
           alt="Leo selfie, smiling next to a watefall, surrounded by rocks, flowers and a clean sky"
-          src="/assets/images/ProfilePicture.png"
+          src="/assets/images/ProfilePicture.jpg"
+          loading="lazy"
+          width="180"
+          height="180"
         />
 
         <p>

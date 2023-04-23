@@ -42,23 +42,23 @@ export const SkillSet = () => {
         <div>
           <ul className={styles.skills__list}>
             <li className={clsx(selectedFrontendSkill === FRONTEND_SKILLS.INTERFACE_BUILD && styles['skills__listItem--selected'])}>
-              <button onClick={() => setSelectedFrontendSkill(FRONTEND_SKILLS.INTERFACE_BUILD)}>
-                <img src="assets/icons/diamond.svg" className="iconShadow" alt="" />
+              <button onClick={() => setSelectedFrontendSkill(FRONTEND_SKILLS.INTERFACE_BUILD)} title="Building Interfaces">
+                <img src="assets/icons/diamond.svg" className="iconShadow" alt="" width="80" height="80" />
               </button>
             </li>
             <li className={clsx(selectedFrontendSkill === FRONTEND_SKILLS.DESIGN_SYSTEM && styles['skills__listItem--selected'])}>
-              <button onClick={() => setSelectedFrontendSkill(FRONTEND_SKILLS.DESIGN_SYSTEM)}>
-                <img src="assets/icons/book.svg" className="iconShadow" alt="" />
+              <button onClick={() => setSelectedFrontendSkill(FRONTEND_SKILLS.DESIGN_SYSTEM)} title="Design Systems">
+                <img src="assets/icons/book.svg" className="iconShadow" alt="" width="80" height="80" />
               </button>
             </li>
             <li className={clsx(selectedFrontendSkill === FRONTEND_SKILLS.WEB_VITALS && styles['skills__listItem--selected'])}>
-              <button onClick={() => setSelectedFrontendSkill(FRONTEND_SKILLS.WEB_VITALS)}>
-                <img src="assets/icons/core.svg" className="iconShadow" alt="" />
+              <button onClick={() => setSelectedFrontendSkill(FRONTEND_SKILLS.WEB_VITALS)} title="Web Vitals">
+                <img src="assets/icons/core.svg" className="iconShadow" alt="" width="80" height="80" />
               </button>
             </li>
             <li className={clsx(selectedFrontendSkill === FRONTEND_SKILLS.MICROFRONTENDS && styles['skills__listItem--selected'])}>
-              <button onClick={() => setSelectedFrontendSkill(FRONTEND_SKILLS.MICROFRONTENDS)}>
-                <img src="assets/icons/flag.svg" className="iconShadow" alt="" />
+              <button onClick={() => setSelectedFrontendSkill(FRONTEND_SKILLS.MICROFRONTENDS)} title="Microfrontends">
+                <img src="assets/icons/flag.svg" className="iconShadow" alt="" width="80" height="80" />
               </button>
             </li>
           </ul>
@@ -124,23 +124,23 @@ export const SkillSet = () => {
         <div>
           <ul className={styles.skills__list}>
             <li className={clsx(selectedBackendSkill === BACKEND_SKILLS.APIS_BUILD && styles['skills__listItem--selected'])}>
-              <button onClick={() => setSelectedBackendSkill(BACKEND_SKILLS.APIS_BUILD)}>
-                <img src="assets/icons/dialog.svg" className="iconShadow" alt="" />
+              <button onClick={() => setSelectedBackendSkill(BACKEND_SKILLS.APIS_BUILD)} title="REST APIs">
+                <img src="assets/icons/dialog.svg" className="iconShadow" alt="" width="80" height="80" />
               </button>
             </li>
             <li className={clsx(selectedBackendSkill === BACKEND_SKILLS.DATABASES && styles['skills__listItem--selected'])}>
-              <button onClick={() => setSelectedBackendSkill(BACKEND_SKILLS.DATABASES)}>
-                <img src="assets/icons/egg.svg" className="iconShadow" alt="" />
+              <button onClick={() => setSelectedBackendSkill(BACKEND_SKILLS.DATABASES)} title="Databases">
+                <img src="assets/icons/egg.svg" className="iconShadow" alt="" width="80" height="80" />
               </button>
             </li>
             <li className={clsx(selectedBackendSkill === BACKEND_SKILLS.MICROSERVICES && styles['skills__listItem--selected'])}>
-              <button onClick={() => setSelectedBackendSkill(BACKEND_SKILLS.MICROSERVICES)}>
-                <img src="assets/icons/balance.svg" className="iconShadow" alt="" />
+              <button onClick={() => setSelectedBackendSkill(BACKEND_SKILLS.MICROSERVICES)} title="Microservices">
+                <img src="assets/icons/balance.svg" className="iconShadow" alt="" width="80" height="80" />
               </button>
             </li>
             <li className={clsx(selectedBackendSkill === BACKEND_SKILLS.SERVERLESS && styles['skills__listItem--selected'])}>
-              <button onClick={() => setSelectedBackendSkill(BACKEND_SKILLS.SERVERLESS)}>
-                <img src="assets/icons/portal.svg" className="iconShadow" alt="" />
+              <button onClick={() => setSelectedBackendSkill(BACKEND_SKILLS.SERVERLESS)} title="Serverless">
+                <img src="assets/icons/portal.svg" className="iconShadow" alt="" width="80" height="80" />
               </button>
             </li>
           </ul>

@@ -14,7 +14,7 @@ export const SkillDescription = (props: PropsWithChildren<SkillDescriptionProps>
   return (
     <div className={clsx(styles.skills_descriptionContent, isSelected && styles.skills_descriptionHidden)}>
       <h5>
-        <img src={iconSrc} className="icon" alt="" />
+        <img src={iconSrc} className="icon" alt="" width="50" height="50" />
         {title}
       </h5>
       {children}

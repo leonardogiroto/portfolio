@@ -5,7 +5,7 @@ export const Guilds = () => {
   return (
     <div id="Guilds" className={clsx("container", styles.guilds)}>
       <h3>
-        <img src="assets/icons/guilds.png" className="icon"  alt="" />
+        <img src="assets/icons/guilds.png" className="icon" alt="" width="50" height="50" />
         Guilds
       </h3>
 
@@ -15,33 +15,33 @@ export const Guilds = () => {
 
       <ul className={styles.guilds__list}>
         <li className={styles.guilds__listItem}>
-          <img src="assets/icons/plus.png" className="icon" alt="" />
-          <h5>Animal Protection</h5>
+          <img src="assets/icons/plus.png" className="icon" alt="" width="50" height="50" />
+          <p>Animal Protection</p>
         </li>
 
         <li className={styles.guilds__listItem}>
-          <img src="assets/icons/map.png" className="icon"  alt="" />
-          <h5>Traveller</h5>
+          <img src="assets/icons/map.png" className="icon"  alt="" width="50" height="50" />
+          <p>Traveller</p>
         </li>
 
         <li className={styles.guilds__listItem}>
-          <img src="assets/icons/lgbt_flag.png" className="icon"  alt="" />
-          <h5>LGBT+ Pride</h5>
+          <img src="assets/icons/lgbt_flag.png" className="icon"  alt="" width="50" height="50" />
+          <p>LGBT+ Pride</p>
         </li>
 
         <li className={styles.guilds__listItem}>
-          <img src="assets/icons/war.png" className="icon"  alt="" />
-          <h5>Gamer</h5>
+          <img src="assets/icons/war.png" className="icon"  alt="" width="50" height="50" />
+          <p>Gamer</p>
         </li>
 
         <li className={styles.guilds__listItem}>
-          <img src="assets/icons/leaf.png" className="icon"  alt="" />
-          <h5>Nature Lover</h5>
+          <img src="assets/icons/leaf.png" className="icon"  alt="" width="50" height="50" />
+          <p>Nature Lover</p>
         </li>
 
         <li className={styles.guilds__listItem}>
-          <img src="assets/icons/feathers.png" className="icon"  alt="" />
-          <h5>Hobbist Writer</h5>
+          <img src="assets/icons/feathers.png" className="icon"  alt="" width="50" height="50" />
+          <p>Hobbist Writer</p>
         </li>
       </ul>
     </div>

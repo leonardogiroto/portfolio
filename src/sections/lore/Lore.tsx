@@ -9,7 +9,7 @@ export const Lore = () => {
       <div className={clsx(styles.lore__scrollBorder, styles.lore__topScroll)} />
 
       <div className={clsx('container', styles.lore__wrapper)}>
-        <h2 className={styles.lore__title}>Lore</h2>
+        <h3 className={styles.lore__title}>Lore</h3>
 
         <p className={styles.lore__intro}>
           Our hero&apos;s story as a software sage begins on 2012 when he first started working in the area, while attending engineering university.

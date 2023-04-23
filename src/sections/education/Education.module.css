@@ -15,9 +15,17 @@
   align-items: center;
 }
 
-.education__dialect > h5 {
+.education__dialect p:nth-child(2) {
   margin-top: 16px;
   margin-bottom: 4px;
+  color: var(--primary-color);
+  font-family: 'Cinzel Decorative', cursive;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.education__dialect p:nth-child(3) {
+  font-size: 15px;
 }
 
 .education__dialectAbbreviation {

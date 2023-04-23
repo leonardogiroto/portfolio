@@ -55,7 +55,7 @@ const QuestScroll = (props: QuestScrollProps) => {
   return (
     <Dialog.Trigger asChild>
       <button onClick={onClick}>
-        <img src="assets/icons/scroll.png" className="icon" alt="" />
+        <img src="assets/icons/scroll.png" className="icon" alt="" width="80" height="80" />
         {title}
       </button>
     </Dialog.Trigger>

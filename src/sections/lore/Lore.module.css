@@ -8,6 +8,7 @@
 
 .lore__title {
   margin-bottom: 28px;
+  color: var(--scroll-title-color);
 }
 
 .lore__title, .lore__intro {

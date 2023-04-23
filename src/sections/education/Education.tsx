@@ -9,7 +9,7 @@ export const Education = () => {
           <span className={styles.education__dialectAbbreviation}>
             PT
           </span>
-          <h5>Portuguese</h5>
+          <p>Portuguese</p>
           <p>NATIVE</p>
         </div>
 
@@ -17,7 +17,7 @@ export const Education = () => {
           <span className={styles.education__dialectAbbreviation}>
             EN
           </span>
-          <h5>English</h5>
+          <p>English</p>
           <p>FLUENT - C2</p>
         </div>
 
@@ -25,7 +25,7 @@ export const Education = () => {
           <span className={styles.education__dialectAbbreviation}>
             ES
           </span>
-          <h5>Spanish</h5>
+          <p>Spanish</p>
           <p>VANTAGE - B2</p>
         </div>
       </div>

@@ -6,7 +6,7 @@ export const Achievements = () => {
   return (
     <div id="Achievements" className={clsx(styles.achievements, "container")}>
       <h3>
-        <img src="assets/icons/trophy.png" className="icon"  alt="" />
+        <img src="assets/icons/trophy.png" className="icon"  alt="" width="50" height="50" />
         Achievements
       </h3>
 
