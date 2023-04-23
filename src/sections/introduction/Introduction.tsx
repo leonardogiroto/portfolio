@@ -26,6 +26,7 @@ export const Introduction = () => {
           alt="Leo as a druid, wearing a blue robe and a red cape. He is holding a blue spellbook on his right hand and invoking an elemental spell on his left hand. A white cat - his familiar - is next to him."
           src="/assets/images/ColoredCharacterWithGlasses.png"
           height="420"
+          width="300"
         />
       </div>
 
