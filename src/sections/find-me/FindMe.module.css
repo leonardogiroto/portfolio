@@ -29,6 +29,7 @@
   }
   .findMe__profilePicture {
     width: 140px;
+    height: 140px;
   }
   .findMe__content {
     margin-top: 12px;
