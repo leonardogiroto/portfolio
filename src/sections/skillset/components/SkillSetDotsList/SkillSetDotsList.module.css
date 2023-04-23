@@ -11,6 +11,10 @@
   margin-top: 12px;
 }
 
+.skills__listDot {
+  box-shadow: 0 0 2px #99774c,0 0 4px #a17e51;
+}
+
 .skills__listDotSelected {
   background: var(--primary-color);
   box-shadow: 0 0 4px #99774c,0 0 8px #a17e51;

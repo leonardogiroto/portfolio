@@ -35,7 +35,7 @@ export const SkillSet = () => {
       <div className="divider" />
 
       <SkillSetRole title="Primary Role: Frontend Engineer">
-        These skills are where our hero excels and have been specializing his efforts throughout his journey.<br />
+        These skills are where our hero excels and have been specializing his efforts through the years.<br />
         He has a vast and deep experience and is ready to face any challenges that may appear with expertise.
       </SkillSetRole>
 
@@ -46,7 +46,7 @@ export const SkillSet = () => {
               ariaControls="Frontend_Skill"
               isSelected={selectedFrontendSkill === FRONTEND_SKILLS.INTERFACE_BUILD}
               title="Building Interfaces"
-              iconSrc="assets/icons/diamond.svg"
+              iconSrc="assets/icons/diamond"
               onSkillClick={() => setSelectedFrontendSkill(FRONTEND_SKILLS.INTERFACE_BUILD)}
             />
 
@@ -54,7 +54,7 @@ export const SkillSet = () => {
               ariaControls="Frontend_Skill"
               isSelected={selectedFrontendSkill === FRONTEND_SKILLS.DESIGN_SYSTEM}
               title="Design Systems"
-              iconSrc="assets/icons/book.svg"
+              iconSrc="assets/icons/book"
               onSkillClick={() => setSelectedFrontendSkill(FRONTEND_SKILLS.DESIGN_SYSTEM)}
             />
 
@@ -62,7 +62,7 @@ export const SkillSet = () => {
               ariaControls="Frontend_Skill"
               isSelected={selectedFrontendSkill === FRONTEND_SKILLS.WEB_VITALS}
               title="Web Vitals"
-              iconSrc="assets/icons/core.svg"
+              iconSrc="assets/icons/core"
               onSkillClick={() => setSelectedFrontendSkill(FRONTEND_SKILLS.WEB_VITALS)}
             />
 
@@ -70,7 +70,7 @@ export const SkillSet = () => {
               ariaControls="Frontend_Skill"
               isSelected={selectedFrontendSkill === FRONTEND_SKILLS.MICROFRONTENDS}
               title="Microfrontends"
-              iconSrc="assets/icons/flag.svg"
+              iconSrc="assets/icons/flag"
               onSkillClick={() => setSelectedFrontendSkill(FRONTEND_SKILLS.MICROFRONTENDS)}
             />
           </ul>
@@ -128,8 +128,8 @@ export const SkillSet = () => {
       <div className="divider" />
 
       <SkillSetRole title="Secondary Role: Backend Engineer">
-        Though it may not be where the hero excels, a great sage knows his way around with a vast knowledge to face any kind of challenge.<br />
-        He has had quite some experience as well and knows where to go when he needs to deepen his knowledge.
+        A great sage knows his way around with a vast knowledge to face any kind of challenge.<br />
+        He has had quite some experience as well and knows where to go when he needs to deepen his skills.
       </SkillSetRole>
 
       <div className={styles.skills__selection}>
@@ -139,7 +139,7 @@ export const SkillSet = () => {
               ariaControls="Backend_Skill"
               isSelected={selectedBackendSkill === BACKEND_SKILLS.APIS_BUILD}
               title="REST APIs"
-              iconSrc="assets/icons/dialog.svg"
+              iconSrc="assets/icons/dialog"
               onSkillClick={() => setSelectedBackendSkill(BACKEND_SKILLS.APIS_BUILD)}
             />
 
@@ -147,7 +147,7 @@ export const SkillSet = () => {
               ariaControls="Backend_Skill"
               isSelected={selectedBackendSkill === BACKEND_SKILLS.DATABASES}
               title="Databases"
-              iconSrc="assets/icons/egg.svg"
+              iconSrc="assets/icons/egg"
               onSkillClick={() => setSelectedBackendSkill(BACKEND_SKILLS.DATABASES)}
             />
 
@@ -155,7 +155,7 @@ export const SkillSet = () => {
               ariaControls="Backend_Skill"
               isSelected={selectedBackendSkill === BACKEND_SKILLS.MICROSERVICES}
               title="Microservices"
-              iconSrc="assets/icons/balance.svg"
+              iconSrc="assets/icons/balance"
               onSkillClick={() => setSelectedBackendSkill(BACKEND_SKILLS.MICROSERVICES)}
             />
 
@@ -163,7 +163,7 @@ export const SkillSet = () => {
               ariaControls="Backend_Skill"
               isSelected={selectedBackendSkill === BACKEND_SKILLS.SERVERLESS}
               title="Serverless"
-              iconSrc="assets/icons/portal.svg"
+              iconSrc="assets/icons/portal"
               onSkillClick={() => setSelectedBackendSkill(BACKEND_SKILLS.SERVERLESS)}
             />
           </ul>

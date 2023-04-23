@@ -10,7 +10,7 @@ export const SkilLSetIntro = () => {
       <p className={styles.skills__intro}>
         One of his greatest strenghts is the ability to rapidly learn any new skills;
         <br className="hideSm" />
-        and in the same way he is devoted to learning, he is passionate about sharing his knowledge. 
+        and in the same way he is devoted to learning, he is passionate about sharing his wisdom. 
       </p>
     </div>
   );

@@ -12,6 +12,8 @@ type SkillListItemProps = {
 export const SkillListItem = (props: SkillListItemProps) => {
   const { ariaControls, isSelected, title, iconSrc, onSkillClick } = props;
 
+  const iconExtension = isSelected ? '.png' : '.svg';
+
   return (
     <li className={clsx(isSelected && styles['skills__listItem--selected'])}>
       <button
@@ -20,7 +22,7 @@ export const SkillListItem = (props: SkillListItemProps) => {
         onClick={onSkillClick}
         title={title}
       >
-        <img src={iconSrc} className="iconShadow" alt="" width="80" height="80" />
+        <img src={`${iconSrc}${iconExtension}`} className="iconShadow" alt="" width="80" height="80" />
       </button>
     </li>
   );
