@@ -1,0 +1,3 @@
+.skills__listItem--selected > button {
+  box-shadow: 0 0 4px #99774c,0 0 8px #a17e51;
+}

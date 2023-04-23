@@ -50,10 +50,6 @@
   box-shadow: 0 0 4px #99774c,0 0 8px #a17e51;
 }
 
-.skills__listItem--selected > button {
-  box-shadow: 0 0 4px #99774c,0 0 8px #a17e51;
-}
-
 @media screen and (max-width: 960px) {
   .skills__selection {
     flex-direction: column;
